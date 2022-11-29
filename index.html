@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="Graphicloads-Medical-Health-Hospital.ico" type="image/x-icon">
+    <title>Página de Pessoas</title>
+    <style>
+        header{
+            background-color: #FFFACD;
+            /* cor hex */
+        }
+        h1{
+            text-align: center;
+            color: rgb(164, 138, 212); /*cor rbg*/
+            font-weight: bolder;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+
+            /* alteração de font, peso e tamanho */
+    
+        }
+        h3{
+            text-align: right;
+        }
+        footer{
+            text-align: center;
+            background-color:#FFFACD;
+            color: hsl(300, 39%, 43%); /* cor hsl */
+           
+        }
+        main{
+            background-color:  rgba(255, 247, 206, 0.961);
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid;
+        }
+        tr.cor{
+            background-color: rgb(164, 138, 212);
+        }
+        h4{
+            color: #222F76;
+            font-weight: lighter;
+            font-size: medium;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* alteração de font, tamanho e peso  */
+        }
+        div.centro{
+            text-align: center;
+        }
+        p.borda{
+            text-align: center;
+            border: 1px solid;
+            width: 200px;
+        }
+        body{
+            background-color:rgb(164, 138, 212);
+        }
+
+        .responsive {
+                display: block;
+                position: relative;
+                width: 100%;
+        }
+
+
+        @media screen and (min-width: 480px)
+        {   
+            body,.header, footer,.nav,.titulomain{
+                margin: 10px 1.041667% 0 1.041667%;
+
+            }
+            .nav ul li{
+                width: 33.333333%;
+           
+            }
+            .column, .column2 {
+                margin: 10px 1.041667% 0 1.041667%;
+                
+            }
+            #fi{
+                width: 50%;
+                float: left;
+                
+
+            }
+        }
+        @media screen and (max-width: 480px){
+            body, .header,footer, .nav,  h1{
+                width: 96.875%;
+                margin-right: 3.125%;
+                margin-top: lem;
+            }
+            .column{
+                margin: lem 0;
+                border-bottom: 1px dashed rgba(251, 244, 244, 0.961);
+                /* cor rgba */
+                margin-right: 3.125%;
+            }
+            .nav ul li{
+                width: 33%;
+            }
+            #fi, .column2{
+                width: 96.875%;
+            }
+            .responsive {
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+
+            
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Vaccine development-amico.svg" height="12%" width="12%" alt="logo do site de vacinação">
+        <h1>Página de Pessoas</h1>
+        <br>
+    </header>
+    <main>
+        <div>
+            <p>
+                <div class="column" id="fi">
+                    <h4>Formulário de entrada dos campos referente a pessoas:</h4>
+                    <button type="button"> <a href="https://ana-livia-motta.github.io/form--pessoas/">Incluir</a>  </button>
+                    <h5>Registro de pessoa a alterar</h5>
+                    <form>
+                        <input type="number">
+                        <button type="button">Alterar</button>
+                        <button type="button">Salvar alteração</button>
+                    </form>
+                </div>
+                
+            </p>
+        </div>
+        <br>
+        <div class="columm 2">
+            <p>
+                <h4>Registro de Pessoa</h4>
+                <form>
+                    <input type="number">
+                    <button type="reset">Excluir</button>
+                </form>
+                
+            </p>
+        </div>
+        <div>
+            <p>
+                <h4>Filtro</h4>
+                <form>
+                    <input type="number">
+                    <button type="button">Listar 1</button>
+                    <button type="button">Listar todas</button>
+                </form>
+                
+            </p>
+        </div>
+        <br><br>
+        
+        <table class="responsive">
+            <tr class="cor">
+                <td>Pessoas</td>
+                <td>CPF</td>
+                <td>Nome</td>
+                <td>Data de Nascimento</td>
+                <td>Sexo</td>
+                <td>Salário</td>
+                <td>E-mail</td>
+                <td>Telefones</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>xxx.xxx.xxx.xx</td>
+                <td>Estefano</td>
+                <td>18/01/1990</td>
+                <td>m</td>
+                <td>R$ xxxx,xx</td>
+                <td>eeeee@gmail.com</td>
+                <td>(xx)xxxx-xxxx</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>xxx.xxx.xxx.xx</td>
+                <td>Ana</td>
+                <td>27/03/2002</td>
+                <td>f</td>
+                <td>R$ xxxx,xx</td>
+                <td>aaaaa@gmail.com</td>
+                <td>(xx)xxxx-xxxx</td>
+            </tr>
+        </table>
+        <br>
+        <i class="material-icons">check</i>
+
+
+
+    
+
+    </main>
+    <footer>
+        <br>
+        ♥ ♥ ♥ ♥ ♥
+        <br>
+        <br>
+    </footer>
+    
+</body>
+</html>
